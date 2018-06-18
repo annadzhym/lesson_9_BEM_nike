@@ -7,64 +7,51 @@
     <link rel="stylesheet" href="css/BEM.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="wraper">
-<main>
-    <div>
-        <article class="b-product">
-            <div class="b-product__brand">
-                <img src="image/logo.png" alt="Nike SB" class="b-product__brand_logo">
+<body class="background">
+    <div  class="page">
+        <section class="product">
+            <img src="image/logo.png" alt="Nike SB" class="product__logo">
+            <img src="image/shoe.png" alt="shoes" class="product__item">
+            <img src="image/" alt="item's colors" class="product__colors">
+        </section>
+        <section class="content">
+            <p class="content__title">Nike SB Stefan Janoski Max</p>
+            <p class="content__subtitle">unisex skateboarding shoe</p>
+            <div class="rating">
+                <span class="fa fa-star rating__star rating__star_checked"></span>
+                <span class="fa fa-star rating__star rating__star_checked"></span>
+                <span class="fa fa-star rating__star rating__star_checked"></span>
+                <span class="fa fa-star rating__star"></span>
+                <span class="fa fa-star rating__star"></span>
             </div>
-            <div class="b-slider">
-                <img src="image/shoe.png" alt="shoes" class="b-slider__item">
-            </div>
-           <label class=".b-color ">
-                <input type="radio" value="grey" name="color" class="b-color b-color__grey" checked>
-                <input type="radio" value="white" name="color" class="b-color b-color__white">
-                <input type="radio" value="coral" name="color"  class="b-color b-color__coral">
-                <input type="radio" value="blue" name="color" class="b-color b-color__blue">
-           </label>
-            <div class="b-product__info">
-                <h1 class="b-product__title">Nike SB Stefan Janoski Max</h1>
-                <h3 class="b-product__subtitle">unisex skateboarding shoe</h3>
-            </div>
-            <div class="b-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </div>
-            <div class="b-choice">
-                <select name="year" class="b-choice__size">
-                    <option value="Size">Size</option>
-                    <option value="35">35</option>
-                    <option value="36">36</option>
-                    <option value="37">37</option>
-                    <option value="38">38</option>
-                    <option value="39">39</option>
-                    <option value="40">40</option>
-                    <option value="41">41</option>
-                    <option value="42">42</option>
-                </select>
-                <select name="year" class="b-choice__quantity">
-                    <option value="Qty">Qty</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                </select>
-                <input type="submit" value="Add to cart" class="b-choice__submit">
-            </div>
-
-
-
-        </article>
+            <section class="choice">
+                <label>
+                    <select name="year" class="choice__size">
+                        <option value="Size">Size</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                    </select>
+                    <select name="quantity" class="choice__quantity">
+                        <option value="Qty">Qty</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                <input type="submit" value="Add to cart" class="choice__submit">
+                </label>
+            </section>
+        </section>
     </div>
-
-</main>
 </body>
 </html>

@@ -1,94 +1,90 @@
-.wraper {
-    background-image: url("../image/background.jpg");
+.background {
+    background: url("../image/background.jpg") darkslateblue;
     background-size: 100%;
 }
-.b-product {
+
+.page {
     margin: 7% auto;
-    width: 50%;
-    height: 600px;
+    width: 40%;
+    height: 400px;
     background-color: #152335;
-    display: block;
     border-radius: 20px;
-    padding: 4%;
-}
-
-.b-product__brand_logo {
-    width: 15%;
-    height: 110px;
-}
-.b-slider__item {
-    width: 60%;
-}
-label {
-    margin-left: 22%;
-}
-.b-color {
-    margin-top: 60px;
-    width: 40px;
-    height: 40px;
-}
-
-.b-product__info {
     display: block;
-    width: 38%;
-    margin-top: -45%;
+}
+
+.product {
+    width: 50%;
+    height: 100%;
+    padding: 2%;
+    display: inline-block;
+}
+
+.product__logo {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    float: left;
+}
+.product__item {
+    width: 95%;
+    height: 160px;
+    margin: 80px 0 40px 0;
+
+}
+
+.product__colors {
+    width: 20%;
+    margin-left: 30%;
+}
+
+.content {
+    width: 40%;
     float: right;
     font-family: Verdana, sans-serif;
     color: white;
+    position: relative;
+    letter-spacing: 1px;
 }
 
-.b-product__title {
-    font-size: 40px;
+.content__title {
+    font-size: 25px;
     opacity: 0.8;
-    letter-spacing: 3px;
-    font-weight: 100;
+
 }
 
-.b-product__subtitle {
+.content__subtitle {
+    font-size: 20px;
     opacity: 0.4;
     text-transform: capitalize;
-    letter-spacing: 3px;
-    font-weight: 100;
-    font-size: 20px;
 }
-.b-rating {
-    display: block;
-    float: right;
-    width: 38%;
-    margin-top: -22%;
+
+.rating {
+    width: 50%;
 }
-.fa-star {
-    width: 5%;
-}
-.b-rating .checked {
+.rating__star_checked {
     color: orange;
 }
-
-.b-choice {
-    display: inline-block;
-    float: right;
-    width: 38%;
-    margin-top: -17%;
-}
-.b-choice__size, .b-choice__quantity {
-    width: 28%;
+.choice__size, .choice__quantity {
+    margin-top: 20px;
+    width: 30%;
     background-color: transparent;
-    font-size: 30px;
-    padding: 5px;
+    font-size: 15px;
+    padding: 2px;
     color: white;
     opacity: 0.5;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
+
+.choice__submit {
+    margin-top: 20px;
+    width: 85%;
+    background: #2a3545;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    opacity: 0.5;
+}
+
 option {
     color: black;
-}
-
-.b-choice__submit {
-    width: 85%;
-    margin-top: 40px;
-    background: #2a3545;
-    padding: 15px;
-    font-size: 30px;
-    color: white;
-    opacity: 0.5;
 }
