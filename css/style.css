@@ -4,40 +4,64 @@
 }
 
 .page {
-    margin: 7% auto;
+    margin: 7% 30%;
     width: 40%;
     height: 400px;
     background-color: #152335;
     border-radius: 20px;
-    display: block;
+    display: inline-flex;
 }
 
 .product {
     width: 50%;
-    height: 100%;
     padding: 2%;
-    display: inline-block;
 }
 
-.product__logo {
-    width: 60px;
-    height: 50px;
-    position: absolute;
-}
 .product__item {
     width: 100%;
     height: 160px;
-    margin: 80px 0 40px 0;
-
+    margin: 20px 0;
 }
 
-.product__colors {
-    margin-left: 40%;
+.product__color {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.product__color--height {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+}
+
+.product__color--height:hover {
+    border: 3px solid darkslategray;
+}
+
+.product__color--gray {
+    background-color: lightslategray;
+}
+
+.product__color--white {
+    background-color: white;
+}
+
+.product__color--coral {
+    background-color: coral;
+}
+
+.product__color--blue {
+    background-color: dodgerblue;
+}
+
+.logo__nike {
+    width: 90px;
+    height: 70px;
 }
 
 .content {
     width: 40%;
-    float: right;
     font-family: Verdana, sans-serif;
     color: white;
     letter-spacing: 1px;
